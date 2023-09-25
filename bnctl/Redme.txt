@@ -1,5 +1,5 @@
 untuk menggunakan docker file pada folder INT :
-- download appagentserver pada appdynamics-controler ( sesuai bahasa pemrograman yang digunakan )
+- download appagentserver pada appdynamics-controller " 172.16.101.99:8022 " ( sesuai bahasa pemrograman yang digunakan )
 - letakan file hasil download sesuai path pada dockerfile
 - lakukan perubahan sesuai kebutuhan
 - lalu jalankan dockerfile
