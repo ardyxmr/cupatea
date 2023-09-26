@@ -14,9 +14,7 @@ bin/eum.sh start
 ps -ef | grep -i eum | grep -v grep
 
 
-EIGER J.LS.CTN PARKA UNO JACKET
-EIGER HANOVER ONLINE JACKET 89
-eiger_bangkong
+
 controler port
 /opt/appdynamics/platform/product/controller/appserver/glassfish/domains/domain1/config
 
@@ -33,8 +31,7 @@ https://github.com/CiscoDevNet/appdynamics-docker-images/blob/master/appd-java/j
 https://sammyjadhav05.medium.com/appdynamics-monitoring-5bd5dc2c8ec6
 https://www.youtube.com/watch?v=R_J8RHrPUCQ&ab_channel=ManageEngineSite24x7
 https://www.site24x7.com/help/apm/java-agent/install-java-agent-in-docker-container.html
-https://ptnttindonesiatechnology-nfr.saas.appdynamics.com/controller/
-account : ptnttindonesiatechnology-nfr
+
 
 controlerdb
 welcome1
