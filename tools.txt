@@ -22,8 +22,7 @@ Appd-platform-linux
 https://docs.appdynamics.com/appd/onprem/latest/en/enterprise-console/administer-the-enterprise-console/update-platform-configurations#id-.UpdatePlatformConfigurationsv21.4-Basic
 https://docs.appdynamics.com/appd/21.x/21.4/en/application-monitoring/install-app-server-agents/container-installation-options/use-a-dockerfile-to-instrument-applications
 https://www.javaguides.net/2018/10/free-open-source-projects-using-spring-boot.html
-username: socteam
-pass: P@ssw0rd!
+
 https://us-east-1.student.classrooms.aws.training/class/cRS8TcwTK79LX68SpsnyUT
 https://www.techtransit.org/install-and-upgrade-java-version-on-centos-redhat-and-fedora-linux/
 https://github.com/spring-projects/spring-petclinic/tree/main
@@ -33,11 +32,7 @@ https://www.youtube.com/watch?v=R_J8RHrPUCQ&ab_channel=ManageEngineSite24x7
 https://www.site24x7.com/help/apm/java-agent/install-java-agent-in-docker-container.html
 
 
-controlerdb
-welcome1
 
-eum_user password
-AppD123
 
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
 update-alternatives --config 'java'
