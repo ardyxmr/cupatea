@@ -38,6 +38,8 @@ export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
 update-alternatives --config 'java'
 
 
+https://github.com/spring-projects/spring-petclinic
+https://github.com/eginnovations/spring-petclinic-microservices/blob/master/README.md
 
 /opt/appdynamics/platform/product/controller/db/bin
 
