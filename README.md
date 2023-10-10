@@ -1,2 +1,2 @@
 # cupatea
-try to learning github
+github on fire
