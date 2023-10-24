@@ -4,7 +4,7 @@ FROM openjdk:8-jre-slim
 RUN mkdir -p /opt/appdynamics
 COPY ./appserveragent/* /opt/appdynamics/
 
-
+#####copy your application.jar to work directory path####
 COPY ./myapp.jar /opt/myapp.jar
 WORKDIR /opt/
 
