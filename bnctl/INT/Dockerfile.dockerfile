@@ -1,6 +1,7 @@
 FROM openjdk:8-jre-slim
 
 #####download appserveragent from your controller and copy the file in to container path####
+RUN mkdir -p /opt/appdynamics/
 COPY ./appserveragent/* /opt/appdynamics/
 
 
