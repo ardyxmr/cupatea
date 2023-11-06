@@ -1,0 +1,22 @@
+version: '3.8'
+volumes:
+  appdynamics:
+    external: true
+
+services:
+   container_name:
+    image: appdynamics/java-spring
+    build:
+      context: ./
+      dockerfile: ./dockerfile
+    volumes:
+    - appdynamics:/appdynamics
+    logging:
+      driver: "none"
+    env_file: ./docker-compose.env
+    environment:
+    - "ROLE=web"
+    - "APPDYNAMICS_AGENT_NODE_NAME=web"
+    - "APPDYNAMICS_AGENT_TIER_NAME=frontend-Node"
+    ports:
+    - "8080:8080"

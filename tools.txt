@@ -1,0 +1,54 @@
+Start Platform Services
+In case of a Server restart, you can start back all the serivces via the CLI
+cd /opt/appdynamics/platform/platform-admin
+bin/platform-admin.sh start-platform-admin
+bin/platform-admin.sh login --user-name=admin ---> only if session expired
+
+bin/platform-admin.sh start-controller-db
+bin/platform-admin.sh start-controller-appserver
+
+bin/platform-admin.sh submit-job --platform-name Appd-platform-linux --service events-service --job start
+
+cd /opt/appdynamics/eum/eum-processor/
+bin/eum.sh start
+ps -ef | grep -i eum | grep -v grep
+
+
+
+controler port
+/opt/appdynamics/platform/product/controller/appserver/glassfish/domains/domain1/config
+
+Appd-platform-linux
+https://docs.appdynamics.com/appd/onprem/latest/en/enterprise-console/administer-the-enterprise-console/update-platform-configurations#id-.UpdatePlatformConfigurationsv21.4-Basic
+https://docs.appdynamics.com/appd/21.x/21.4/en/application-monitoring/install-app-server-agents/container-installation-options/use-a-dockerfile-to-instrument-applications
+https://www.javaguides.net/2018/10/free-open-source-projects-using-spring-boot.html
+
+https://us-east-1.student.classrooms.aws.training/class/cRS8TcwTK79LX68SpsnyUT
+https://www.techtransit.org/install-and-upgrade-java-version-on-centos-redhat-and-fedora-linux/
+https://github.com/spring-projects/spring-petclinic/tree/main
+https://github.com/CiscoDevNet/appdynamics-docker-images/blob/master/appd-java/jetty/9/jre8/Dockerfile
+https://sammyjadhav05.medium.com/appdynamics-monitoring-5bd5dc2c8ec6
+https://www.youtube.com/watch?v=R_J8RHrPUCQ&ab_channel=ManageEngineSite24x7
+https://www.site24x7.com/help/apm/java-agent/install-java-agent-in-docker-container.html
+
+
+
+https://gist.github.com/wavezhang/ba8425f24a968ec9b2a8619d7c2d86a6
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
+update-alternatives --config 'java'
+
+
+https://github.com/spring-projects/spring-petclinic
+https://github.com/eginnovations/spring-petclinic-microservices/blob/master/README.md
+
+/opt/appdynamics/platform/product/controller/db/bin
+
+/opt/appdynamics/platform/product/controller/db/db.cnf
+
+/opt/appdynamics/platform/product/controller/db/data
+
+/opt/appdynamics/platform/product/controller/db/mysql.sock
+
+
+https://www.redhat.com/en/technologies/cloud-computing/openshift/LvlUpOPP?trialid=6334efd623bb88ad7eb3ed8c&bypass=1
+https://console.redhat.com/openshift/register
