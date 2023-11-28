@@ -1,0 +1,43 @@
+meta:
+  version: 3.0.2
+  create-date: 2023-11-27T14:00:09Z
+license:
+  id: 168071448664JOH
+  expiration-date: 2023-12-18T00:00:00Z
+  customer:
+    id: cust
+    name: Badan Pengawasan Keuangan dan Pembangunan (BPKP)
+    email: wahyu.anggoro@bpkp.go.id
+  type: ONPREM-CONTROLLER
+  hardware-fingerprint: ANY
+  environment: PROD
+  packages:
+  - package: PREMIUM
+    create-date: 2023-04-05T00:00:00Z
+    start-date: 2023-04-05T00:00:00Z
+    expiration-date: 2023-12-18T00:00:00Z
+    type: TRIAL
+    license-units: 182
+    properties: {}
+  - package: RUM_PRO
+    create-date: 2023-04-05T00:00:00Z
+    start-date: 2023-04-05T00:00:00Z
+    expiration-date: 2023-12-18T00:00:00Z
+    type: PAID
+    license-units: 1
+    properties:
+      eum-license-type: EUM_PRO
+      eum-unified-license-allows-overages: "false"
+      eum-unified-license-max-units: 1
+      mobile-license-type: MOBILE_PRO
+  license-unit-ratios: []
+  properties:
+    eum-account-name: BadanPengawasanKeuangandanPembangunanBPKPa0Q2H00000KiWGkUAN
+    eum-deployment: onprem
+    eum-license-key: a0ec5c74-304d-45f4-9724-3cf30b07d1bd
+---
+encryption:
+  algorithm: None
+signature:
+  algorithm: SHA256withRSA
+  value: a34dccf0c62fcd3df04dc8d3fa0e1539cf27df6393334dae7e4617e58b594c4ddfaf1cfb73f1880e8a5199af0ac0b7583bba8f4a9e64cf8a498e1478c70f8658d020b18971d818a811737681eafd0fe0c490d9d1b68e61364f5b14e402a284f053360a6656b8efc2a75ea5b50f67c14523ffd5507eddd6df79d2e82c8d3c3e7301fa76b1969ac06416252c0bfee77ed9f5b3c02b61e5e8784e20ad9cbf3e880777f58d68da6b6d607d3c5ab812e0376622171e82b20a87bdc46f4669f5bc7fb74c0c4deab45cde2e62a56905250d0a6cb02340f1880a7853fa670797968a60b9c260382a58e1c2367ac62d455e0ce995e1e284afe795256e2ed17eca80d04a85d9d960b48d6314e54ab5d08e43331c88a5caf4c94545667029ce498491ce58547e5437ab2e11d8d3ab383d1639c98bb4bf1cc6bf573eac5eca25758806a54446bff9354b7742529d07af14d940e7135ab814b2680180040b87450e2554801b05511500056e2f8eb0d412728328b9f5fa460de2121b40ba1f9923cec256b3bc8392cc02d9510c993a0c369e2ce081e834c0e4c7995dbb5fedf25264b6f6763b938192447778cb00980671de26790df6a8cc714cfa267f2820c672e5bc227815264e865f1c0efba397170a12f7cd8b9a60ead3db6ef1cf0bc79a6a931c75cd8ba6e3cc00255378ff82012ea6946ffa59a89d05791b728a1aad05574ad27ce9a02f
