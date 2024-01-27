@@ -53,6 +53,9 @@ https://github.com/eginnovations/spring-petclinic-microservices/blob/master/READ
 https://www.redhat.com/en/technologies/cloud-computing/openshift/LvlUpOPP?trialid=6334efd623bb88ad7eb3ed8c&bypass=1
 https://console.redhat.com/openshift/register
 
+admin/latiflatif123
+customer1
+0c8a05d6-712f-41de-87ee-ae3ceca9730d
 #############mysql & phpmyadmin docker##############
 docker run -d \
     --name poc1-mysql \
@@ -71,16 +74,14 @@ docker run -d \
 	
 docker run — name poc1-phpmyadmin -d — link poc1-mysql:db -p 8081:80 phpmyadmin/apache
 
-
+#######################PHP Agent########################################
 /var/www/html/opencart/upload/catalog/view/template/common
 
 ./install.sh -s -a=ptnttindonesiatechnology-nfr@jn8da2f8bhai -i /etc/php/8.1/apache2/conf.d -p /usr/bin -e /usr/lib/php/20210902 -v 8.1 ptnttindonesiatechnology-nfr.saas.appdynamics.com 443 Opencart Web-cart Ubuntu-vps
 
 ./install.sh -a=ptnttindonesiatechnology-nfr@jn8da2f8bhai -s -i /etc/php/8.1/apache2/conf.d -p /usr/bin -e /usr/lib/php/20210902 -v 8.1 ptnttindonesiatechnology-nfr.saas.appdynamics.com 443 poc-crud Web-crud Ubuntu1-vps
 
-admin/latiflatif123
-customer1
-0c8a05d6-712f-41de-87ee-ae3ceca9730d
+
 
 #############################DB Agent ##############
 nohup java -Dappdynamics.agent.maxMetrics=300000 -Ddbagent.name=DBAgent-appd-VPS -jar db-agent.jar &
@@ -100,7 +101,17 @@ SHOW GRANTS FOR 'test'@'%';
 https://gist.github.com/wavezhang/ba8425f24a968ec9b2a8619d7c2d86a6
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:/bin/java::")
 update-alternatives --config 'java'
+
+***********Manual install java with gz**********************
+download java gz file from oracle
+mkdir /usr/java
+cd /usr/java/
+tar -xf jdk-8u391-linux-x64.tar.gz
+cd /usr/java/jdk1.8.0_391/bin/
+./java -version
 echo 'export PATH="$PATH:/usr/java/jdk1.8.0_391/bin"' >> ~/.bashrc
 echo 'export JAVA_HOME=/usr/java/jdk1.8.0_391/bin/' >> ~/.bashrc
-#######################################
+source ~/.bashrc
+java -version
+#######################
 
