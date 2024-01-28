@@ -114,4 +114,35 @@ echo 'export JAVA_HOME=/usr/java/jdk1.8.0_391/bin/' >> ~/.bashrc
 source ~/.bashrc
 java -version
 #######################
+timedatectl
+timedatectl list-timezones
+sudo timedatectl set-timezone Asia/Jakarta
 
+
+apt update
+apt upgrade -y
+reboot
+
+apt-get install ca-certificates curl gnupg
+install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+chmod a+r /etc/apt/keyrings/docker.gpg
+echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+$(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+apt-get update
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+apt-get -y install php8.1 libapache2-mod-php8.1 apache2 php8.1-mysql php8.1-curl php8.1-gd php8.1-zip unzip unrar
+
+
+mkdir /opt/appdynamics
+mkdir /opt/appdynamics/phpagent
+mkdir /opt/appdynamics/machineagent
+mkdir /opt/appdynamics/dbagent
+
+cd /var/www/html/
+git clone https://github.com/pustakakoding/aplikasi-crud-php8-mysql8-bootstrap5-vanillajs.git
+mv aplikasi-crud-php8-mysql8-bootstrap5-vanillajs/ webapp
+nano /etc/apache2/sites-available/000-default.conf
